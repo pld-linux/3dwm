@@ -1,0 +1,57 @@
+--- 3dwm-0.3.2/src/Polhem/EventManager.cc.orig	Wed Jul 18 09:48:37 2001
++++ 3dwm-0.3.2/src/Polhem/EventManager.cc	Tue Jul  8 15:25:39 2003
+@@ -40,6 +40,15 @@
+ #include "Polhem/LogGroup.hh"
+ #include "Polhem/EventManager.hh"
+ 
++const char * const LogGroup::General	= "General";
++const char * const LogGroup::Server	= "Server";
++const char * const LogGroup::Thread	= "Thread";
++const char * const LogGroup::Renderer	= "Renderer";
++const char * const LogGroup::Event	= "Event";
++const char * const LogGroup::Platform	= "Platform";
++const char * const LogGroup::Corba	= "CORBA";
++const char * const LogGroup::Config	= "Config";
++
+ using namespace Nobel;
+ 
+ // -- Local Function Prototypes
+--- 3dwm-0.3.2/include/Polhem/LogGroup.hh.orig	Thu Aug 16 13:32:23 2001
++++ 3dwm-0.3.2/include/Polhem/LogGroup.hh	Tue Jul  8 15:25:38 2003
+@@ -41,28 +41,28 @@
+ public:
+ 
+     /// General log messages
+-    static const char * const General	= "General";
++    static const char * const General;
+ 
+     /// Server log messages
+-    static const char * const Server	= "Server";
++    static const char * const Server;
+ 
+     /// Thread-related log messages
+-    static const char * const Thread	= "Thread";
++    static const char * const Thread;
+ 
+     /// Renderer log messages
+-    static const char * const Renderer	= "Renderer";
++    static const char * const Renderer;
+ 
+     /// Event log messages
+-    static const char * const Event	= "Event";
++    static const char * const Event;
+ 
+     /// Platform log messages
+-    static const char * const Platform	= "Platform";
++    static const char * const Platform;
+ 
+     /// CORBA-related log messages
+-    static const char * const Corba	= "CORBA";
++    static const char * const Corba;
+ 
+     /// Configuration log messages
+-    static const char * const Config	= "Config";
++    static const char * const Config;
+ };
+ 
+ #endif /* LogGroup.hh */
