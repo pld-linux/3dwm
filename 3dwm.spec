@@ -44,7 +44,7 @@ etc.
 
 %description -l pl
 3Dwm jest trójwymiarowym ¶rodowiskiem u¿ytkownika, które mo¿na uruchomiæ
-na sprzêcie do Rzeczywisto¶ci Wirtualnej (jak CAVE lub HMD) oraz na 
+na sprzêcie do Rzeczywisto¶ci Wirtualnej (jak CAVE lub HMD) oraz na
 komputerach biurkowych. Jest to platforma dla badañ i rozwoju trójwymiarowych
 interfejsów u¿ytkownika, dostarczaj±ca ¶rodków odkrywania mo¿liwej przysz³o¶ci
 interfejsów u¿ytkownika. 3Dwm jest w pe³ni rozproszony z u¿yciem technologii
@@ -71,7 +71,7 @@ etc.
 
 %description libs -l pl
 3Dwm jest trójwymiarowym ¶rodowiskiem u¿ytkownika, które mo¿na uruchomiæ
-na sprzêcie do Rzeczywisto¶ci Wirtualnej (jak CAVE lub HMD) oraz na 
+na sprzêcie do Rzeczywisto¶ci Wirtualnej (jak CAVE lub HMD) oraz na
 komputerach biurkowych. Jest to platforma dla badañ i rozwoju trójwymiarowych
 interfejsów u¿ytkownika, dostarczaj±ca ¶rodków odkrywania mo¿liwej przysz³o¶ci
 interfejsów u¿ytkownika. 3Dwm jest w pe³ni rozproszony z u¿yciem technologii
@@ -99,7 +99,7 @@ etc.
 
 %description devel -l pl
 3Dwm jest trójwymiarowym ¶rodowiskiem u¿ytkownika, które mo¿na uruchomiæ
-na sprzêcie do Rzeczywisto¶ci Wirtualnej (jak CAVE lub HMD) oraz na 
+na sprzêcie do Rzeczywisto¶ci Wirtualnej (jak CAVE lub HMD) oraz na
 komputerach biurkowych. Jest to platforma dla badañ i rozwoju trójwymiarowych
 interfejsów u¿ytkownika, dostarczaj±ca ¶rodków odkrywania mo¿liwej przysz³o¶ci
 interfejsów u¿ytkownika. 3Dwm jest w pe³ni rozproszony z u¿yciem technologii
@@ -127,7 +127,7 @@ etc.
 
 %description static -l pl
 3Dwm jest trójwymiarowym ¶rodowiskiem u¿ytkownika, które mo¿na uruchomiæ
-na sprzêcie do Rzeczywisto¶ci Wirtualnej (jak CAVE lub HMD) oraz na 
+na sprzêcie do Rzeczywisto¶ci Wirtualnej (jak CAVE lub HMD) oraz na
 komputerach biurkowych. Jest to platforma dla badañ i rozwoju trójwymiarowych
 interfejsów u¿ytkownika, dostarczaj±ca ¶rodków odkrywania mo¿liwej przysz³o¶ci
 interfejsów u¿ytkownika. 3Dwm jest w pe³ni rozproszony z u¿yciem technologii
