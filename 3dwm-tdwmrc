@@ -1,0 +1,44 @@
+<?xml version="1.0" standalone="yes"?>
+
+<config>
+	
+	<!-- Screen setup.
+		Use this to specify screen dimensions and color depth.
+		There should currently only be one screen specification
+		in the config file. 
+	  -->
+	<screens>
+		<screen name="root" width="640" height="480" depth="16"/>
+	</screens>
+
+	<!-- Event rules.
+		Event rules are used to map input events to system
+		commands in the display server. Here you may specify
+		the filename of any Zorn rule files that should be
+		loaded into the server. NOTE! You will need to modify
+		this path to the correct one!
+	  -->
+	<eventRules>
+		<eventRule file="/usr/share/3Dwm/default.zorn"/>
+
+		<!--
+		<eventRule file="/usr/share/3Dwm/headtracker.zorn"/>
+		-->
+	</eventRules>
+
+	<!-- Logging parameters.
+		Add any log groups that should be subscribed to. All
+		log messages for subscribed log groups will be output
+		to the server log file.
+	  -->
+	<logging>
+		<logGroup name="General"/>
+		<logGroup name="Server"/>
+		<logGroup name="Thread"/>
+		<logGroup name="Renderer"/>
+		<logGroup name="Event"/>
+		<logGroup name="Platform"/>
+		<logGroup name="CORBA"/>
+	</logging>
+	
+</config>
