@@ -3,6 +3,8 @@ Summary:	3D user environment
 Summary(pl):	Trójwymiarowe ¶rodowisko u¿ytkownika
 Version:	0.3.2
 Release:	0.1
+Group:		X11/Window Managers
+License:	LGPL
 Source0:	http://www.3dwm.org/download/%{name}-%{version}.tar.gz
 # Source0-md5: 61510b9e9769a36e5790c9d606bfbfbb
 Source1:	%{name}-tdwmrc
@@ -10,10 +12,7 @@ Patch0:		%{name}-autocrap.patch
 Patch1:		%{name}-gcc32.patch
 Patch2:		%{name}-SDL-in-usr-X11R6.patch
 Patch3:		%{name}-omniORB4.patch
-Group:		X11/Window Managers
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-License:	LGPL
-URL:		http://www.3dwm.org
+URL:		http://www.3dwm.org/
 BuildRequires:	OpenGL-devel
 BuildRequires:	SDL-devel
 BuildRequires:	XFree86-devel
@@ -23,6 +22,7 @@ BuildRequires:	libpng-devel
 BuildRequires:	meshio-devel
 BuildRequires:	omniORB-devel
 Requires:	%{name}-libs = %{version}
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 3Dwm is a three-dimensional user environment that can run on immersive
@@ -145,12 +145,16 @@ mv -f INSTALL INSTALL.tmp
 %{__autoconf}
 %{__automake}
 mv -f INSTALL.tmp INSTALL
-%configure --enable-optimize --disable-rpath
+%configure \
+	--enable-optimize \
+	--disable-rpath
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 rm $RPM_BUILD_ROOT/%{_datadir}/3Dwm/tdwmrc
 install -m 644 %{SOURCE1} $RPM_BUILD_ROOT/%{_datadir}/3Dwm/tdwrc
