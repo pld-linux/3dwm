@@ -2,7 +2,7 @@ Summary:	3D user environment
 Summary(pl):	Trójwymiarowe ¶rodowisko u¿ytkownika
 Name:		3dwm
 Version:	0.3.2
-Release:	0.1
+Release:	1
 License:	LGPL
 Group:		X11/Window Managers
 Source0:	http://www.3dwm.org/download/%{name}-%{version}.tar.gz
@@ -25,7 +25,7 @@ BuildRequires:	expat-devel
 BuildRequires:	libpng-devel
 BuildRequires:	libtool
 BuildRequires:	meshio-devel
-BuildRequires:	omniORB-devel
+BuildRequires:	omniORB-devel >= 4.0.2
 # omniidl is here
 BuildRequires:	omniORB
 Requires:	%{name}-libs = %{version}
