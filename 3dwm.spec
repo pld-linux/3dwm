@@ -21,7 +21,7 @@ BuildRequires:	expat-devel
 BuildRequires:	libpng-devel
 BuildRequires:	meshio-devel
 BuildRequires:	omniORB-devel
-Requires:	%{name}-libs = %{name}-%{version}
+Requires:	%{name}-libs = %{version}
 
 %description
 3Dwm is a three-dimensional user environment that can run on immersive
