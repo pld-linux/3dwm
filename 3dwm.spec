@@ -6,7 +6,7 @@ Release:	1
 License:	LGPL
 Group:		X11/Window Managers
 Source0:	http://www.3dwm.org/download/%{name}-%{version}.tar.gz
-# Source0-md5: 61510b9e9769a36e5790c9d606bfbfbb
+# Source0-md5:	61510b9e9769a36e5790c9d606bfbfbb
 Source1:	%{name}-tdwmrc
 Patch0:		%{name}-autocrap.patch
 Patch1:		%{name}-gcc32.patch
