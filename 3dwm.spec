@@ -1,6 +1,6 @@
-Name:		3dwm
 Summary:	3D user environment
 Summary(pl):	Trójwymiarowe ¶rodowisko u¿ytkownika
+Name:		3dwm
 Version:	0.3.2
 Release:	0.1
 Group:		X11/Window Managers
@@ -17,8 +17,11 @@ BuildRequires:	OpenGL-devel
 BuildRequires:	SDL-devel
 BuildRequires:	XFree86-devel
 BuildRequires:	alsa-lib-devel
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	expat-devel
 BuildRequires:	libpng-devel
+BuildRequires:	libtool
 BuildRequires:	meshio-devel
 BuildRequires:	omniORB-devel
 Requires:	%{name}-libs = %{version}
@@ -156,14 +159,14 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-rm $RPM_BUILD_ROOT/%{_datadir}/3Dwm/tdwmrc
-install -m 644 %{SOURCE1} $RPM_BUILD_ROOT/%{_datadir}/3Dwm/tdwrc
-
-%post libs -p /sbin/ldconfig
-%postun libs -p /sbin/ldconfig
+rm $RPM_BUILD_ROOT%{_datadir}/3Dwm/tdwmrc
+install %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/3Dwm/tdwrc
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%post	libs -p /sbin/ldconfig
+%postun	libs -p /sbin/ldconfig
 
 %files
 %defattr(644,root,root,755)
