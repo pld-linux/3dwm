@@ -1,0 +1,13 @@
+diff -ur 3dwm-0.3.2/server/Makefile.am 3dwm-0.3.2-/server/Makefile.am
+--- 3dwm-0.3.2/server/Makefile.am	Thu Aug 16 13:32:23 2001
++++ 3dwm-0.3.2-/server/Makefile.am	Mon Feb  3 20:17:28 2003
+@@ -32,7 +32,7 @@
+ # USA
+ # ------------------------------------------------------------------------
+ 
+-INCLUDES = -I$(top_srcdir)/include -I$(top_builddir)/include/Nobel
++INCLUDES = -I$(top_srcdir)/include -I$(top_builddir)/include/Nobel -I/usr/X11R6/include
+ CXXFLAGS = $(ORBCXXFLAGS)
+ 
+ bin_PROGRAMS = tdwm-server
+

@@ -1,0 +1,65 @@
+diff -ur 3dwm-0.3.1/src/Celsius/SAX/ExpatParser.cc 3dwm-0.3.1-/src/Celsius/SAX/ExpatParser.cc
+--- 3dwm-0.3.1/src/Celsius/SAX/ExpatParser.cc	Tue Aug 21 10:51:42 2001
++++ 3dwm-0.3.1-/src/Celsius/SAX/ExpatParser.cc	Mon Feb  3 18:17:12 2003
+@@ -62,13 +63,13 @@
+       _docHandler(0), _errorHandler(0)
+ {
+     // Associate the parser with a pointer to this instance
+-    XML_SetUserData(_parser, this);
++    XML_SetUserData((XML_ParserStruct*)_parser, this);
+ }
+ 
+ ExpatParser::~ExpatParser()
+ {
+     // Delete the parser
+-    XML_ParserFree(_parser);
++    XML_ParserFree((XML_ParserStruct*)_parser);
+ }
+ 
+ void ExpatParser::setEntityResolver(EntityResolver *resolver)
+@@ -88,13 +89,13 @@
+     
+     // If this is a valid handler, set event handler functions
+     if (_docHandler) {
+-	XML_SetElementHandler(_parser, startElementHandler, endElementHandler);
+-	XML_SetCharacterDataHandler(_parser, characterDataHandler);
++	XML_SetElementHandler((XML_ParserStruct*)_parser, startElementHandler, endElementHandler);
++	XML_SetCharacterDataHandler((XML_ParserStruct*)_parser, characterDataHandler);
+     }
+     // It is not, clear out handlers to stop handling events
+     else {
+-	XML_SetElementHandler(_parser, 0, 0);
+-	XML_SetCharacterDataHandler(_parser, 0);
++	XML_SetElementHandler((XML_ParserStruct*)_parser, 0, 0);
++	XML_SetCharacterDataHandler((XML_ParserStruct*)_parser, 0);
+     }
+ }
+ 	
+@@ -123,19 +124,19 @@
+ 	is.read(buffer, BUFFER_SIZE);
+ 	
+ 	// Parse it and report any errors
+-	if (!XML_Parse(_parser, buffer, is.gcount(), false))
+-	    throw ParseException(XML_ErrorString(XML_GetErrorCode(_parser)),
++	if (!XML_Parse((XML_ParserStruct*)_parser, buffer, is.gcount(), false))
++	    throw ParseException(XML_ErrorString(XML_GetErrorCode((XML_ParserStruct*)_parser)),
+ 				 publicId, systemId, 
+-				 XML_GetCurrentLineNumber(_parser),
+-				 XML_GetCurrentColumnNumber(_parser));
++				 XML_GetCurrentLineNumber((XML_ParserStruct*)_parser),
++				 XML_GetCurrentColumnNumber((XML_ParserStruct*)_parser));
+     }
+     
+     // We need to call expat with a final flag set to true
+-    if (!XML_Parse(_parser, 0, 0, true))
+-	throw ParseException(XML_ErrorString(XML_GetErrorCode(_parser)),
++    if (!XML_Parse((XML_ParserStruct*)_parser, 0, 0, true))
++	throw ParseException(XML_ErrorString(XML_GetErrorCode((XML_ParserStruct*)_parser)),
+ 			     publicId, systemId, 
+-			     XML_GetCurrentLineNumber(_parser),
+-			     XML_GetCurrentColumnNumber(_parser));
++			     XML_GetCurrentLineNumber((XML_ParserStruct*)_parser),
++			     XML_GetCurrentColumnNumber((XML_ParserStruct*)_parser));
+     
+     // Finally, if we have a document handler, send an end event to it
+     if (_docHandler) _docHandler->endDocument();

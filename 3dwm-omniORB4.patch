@@ -1,0 +1,24 @@
+diff -ur 3dwm-0.3.2/configure.in 3dwm-0.3.2-/configure.in
+--- 3dwm-0.3.2/configure.in	Wed Dec 11 11:07:41 2002
++++ 3dwm-0.3.2-/configure.in	Mon Feb  3 20:18:56 2003
+@@ -152,7 +152,7 @@
+ dnl ORB variables
+ ORBCXXFLAGS="-D__OMNIORB3__ -D__x86__ -D__linux__ -D__OSVERSION__=2"
+ ORBOPTFLAGS="-fno-default-inline -fomit-frame-pointer -fnonnull-objects"
+-ORBLIBS="-lomniORB3 -lomnithread -ltcpwrapGK -lomniDynamic3"
++ORBLIBS="-lomniORB4 -lomnithread -lomniDynamic4"
+ AC_SUBST(ORBCXXFLAGS)
+ AC_SUBST(ORBOPTFLAGS)
+ AC_SUBST(ORBLIBS)
+diff -ur 3dwm-0.3.2/include/Nobel/CORBA.hh 3dwm-0.3.2-/include/Nobel/CORBA.hh
+--- 3dwm-0.3.2/include/Nobel/CORBA.hh	Tue Jun 19 00:58:34 2001
++++ 3dwm-0.3.2-/include/Nobel/CORBA.hh	Mon Feb  3 19:55:22 2003
+@@ -42,7 +42,7 @@
+ //using namespace std;
+ 
+ // -- omniORB Includes
+-#include <omniORB3/CORBA.h>
++#include <omniORB4/CORBA.h>
+ 
+ // -- Celsius Includes
+ #include "Celsius/Exception.hh"
