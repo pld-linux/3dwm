@@ -1,0 +1,154 @@
+--- 3dwm-0.3.2/src/Nobel/Makefile.am.orig	Sun Jun 10 15:56:25 2001
++++ 3dwm-0.3.2/src/Nobel/Makefile.am	Tue Jul  8 15:37:11 2003
+@@ -91,7 +91,7 @@
+ lib_LTLIBRARIES = libNobel.la
+ 
+ INCLUDES = -I$(top_builddir)/include/Nobel
+-CXXFLAGS = $(ORBCXXFLAGS)
++AM_CXXFLAGS = $(ORBCXXFLAGS)
+ 
+ CLEANFILES = $(SRC) $(HDR)
+ 
+--- 3dwm-0.3.2/src/Celsius/SAX/Makefile.am.orig	Tue Aug 21 16:43:03 2001
++++ 3dwm-0.3.2/src/Celsius/SAX/Makefile.am	Tue Jul  8 15:35:24 2003
+@@ -48,7 +48,7 @@
+ lib_LTLIBRARIES = libCelsiusSAX.la
+ 
+ INCLUDES = -I$(top_srcdir)/include
+-CXXFLAGS = -Wall $(XML_LIBS_I)
++CXXFLAGS = @CXXFLAGS@ -Wall $(XML_LIBS_I)
+ 
+ libCelsiusSAX_la_LDFLAGS = -version-info $(LIBRARY_VERSION)
+ libCelsiusSAX_la_LIBADD = $(XML_LIBS_L)
+--- 3dwm-0.3.2/src/Celsius/Makefile.am.orig	Fri Dec  7 14:09:36 2001
++++ 3dwm-0.3.2/src/Celsius/Makefile.am	Tue Jul  8 15:36:51 2003
+@@ -50,7 +50,7 @@
+ lib_LTLIBRARIES = libCelsius.la
+ 
+ INCLUDES = -I$(top_srcdir)/include/Celsius
+-CXXFLAGS = -Wall
++AM_CXXFLAGS = -Wall
+ 
+ libCelsius_la_LDFLAGS = -version-info $(LIBRARY_VERSION)
+ libCelsius_la_LIBADD = -ldl
+--- 3dwm-0.3.2/src/Garbo/Makefile.am.orig	Sat Jun  9 16:44:56 2001
++++ 3dwm-0.3.2/src/Garbo/Makefile.am	Tue Jul  8 15:37:01 2003
+@@ -49,7 +49,7 @@
+ 
+ INCLUDES = -I$(top_srcdir)/include/ -I$(top_builddir)/include/Nobel	\
+ -I$(top_srcdir)/include/Garbo
+-CXXFLAGS = $(ORBCXXFLAGS)
++AM_CXXFLAGS = $(ORBCXXFLAGS)
+ 
+ libGarbo_la_LDFLAGS = -version-info $(LIBRARY_VERSION)
+ libGarbo_la_SOURCES = VNCInterface.cc WSInterface.cc vncauth.c d3des.c
+--- 3dwm-0.3.2/src/Zorn/Makefile.am.orig	Wed Jun 20 14:32:15 2001
++++ 3dwm-0.3.2/src/Zorn/Makefile.am	Tue Jul  8 15:37:39 2003
+@@ -49,7 +49,7 @@
+ 
+ INCLUDES = -I$(top_srcdir)/include/Zorn
+ YFLAGS = -d
+-CXXFLAGS = -Wall
++AM_CXXFLAGS = -Wall
+ 
+ libZorn_la_LDFLAGS = -version-info $(LIBRARY_VERSION)
+ libZorn_la_LIBADD = @LEXLIB@
+--- 3dwm-0.3.2/src/Solid/Makefile.am.orig	Wed Aug  1 17:09:02 2001
++++ 3dwm-0.3.2/src/Solid/Makefile.am	Tue Jul  8 15:37:28 2003
+@@ -48,7 +48,7 @@
+ lib_LTLIBRARIES = libSolid.la
+ 
+ INCLUDES = -I$(top_srcdir)/include
+-CXXFLAGS = -Wall
++AM_CXXFLAGS = -Wall
+ 
+ libSolid_la_LDFLAGS = -version-info $(LIBRARY_VERSION)
+ libSolid_la_SOURCES = BSP.cc BSPTreeBuilder.cc BSPTree.cc	\
+--- 3dwm-0.3.2/src/support/Nobel++/Makefile.am.orig	Sat Jun  9 16:44:57 2001
++++ 3dwm-0.3.2/src/support/Nobel++/Makefile.am	Tue Jul  8 15:37:58 2003
+@@ -49,7 +49,7 @@
+ 
+ INCLUDES = -I$(top_srcdir)/include/ -I$(top_srcdir)/include/support	\
+            -I$(top_builddir)/include/Nobel
+-CXXFLAGS = $(ORBCXXFLAGS)
++AM_CXXFLAGS = $(ORBCXXFLAGS)
+ 
+ libNobelxx_la_LDFLAGS = -version-info $(LIBRARY_VERSION)
+ libNobelxx_la_SOURCES = ImageLoader.cc Nobel.cc # VrmlLoader.cc
+--- 3dwm-0.3.2/server/Makefile.am.orig	Tue Jul  8 15:31:58 2003
++++ 3dwm-0.3.2/server/Makefile.am	Tue Jul  8 15:38:16 2003
+@@ -33,7 +33,7 @@
+ # ------------------------------------------------------------------------
+ 
+ INCLUDES = -I$(top_srcdir)/include -I$(top_builddir)/include/Nobel -I/usr/X11R6/include
+-CXXFLAGS = $(ORBCXXFLAGS)
++AM_CXXFLAGS = $(ORBCXXFLAGS)
+ 
+ bin_PROGRAMS = tdwm-server
+ 
+--- 3dwm-0.3.2/clients/texclient/Makefile.am.orig	Tue May 29 00:45:23 2001
++++ 3dwm-0.3.2/clients/texclient/Makefile.am	Tue Jul  8 15:39:24 2003
+@@ -34,7 +34,7 @@
+ 
+ INCLUDES = -I$(top_srcdir)/include -I$(top_srcdir)/include/support	\
+            -I$(top_builddir)/include/Nobel
+-CXXFLAGS = $(ORBCXXFLAGS)
++AM_CXXFLAGS = $(ORBCXXFLAGS)
+ 
+ bin_PROGRAMS = texclient
+ 
+--- 3dwm-0.3.2/clients/geoclient/Makefile.am.orig	Sun Jun 10 15:56:25 2001
++++ 3dwm-0.3.2/clients/geoclient/Makefile.am	Tue Jul  8 15:39:01 2003
+@@ -34,7 +34,7 @@
+ 
+ INCLUDES = -I$(top_srcdir)/include -I$(top_srcdir)/include/support	\
+ -I$(top_builddir)/include/Nobel
+-CXXFLAGS = $(ORBCXXFLAGS)
++AM_CXXFLAGS = $(ORBCXXFLAGS)
+ 
+ bin_PROGRAMS = geoclient
+ 
+--- 3dwm-0.3.2/clients/vncclient/Makefile.am.orig	Tue Nov 13 16:18:07 2001
++++ 3dwm-0.3.2/clients/vncclient/Makefile.am	Tue Jul  8 15:39:41 2003
+@@ -34,7 +34,7 @@
+ 
+ INCLUDES = -I$(top_srcdir)/include -I$(top_srcdir)/include/support	\
+            -I$(top_builddir)/include/Nobel
+-CXXFLAGS = $(ORBCXXFLAGS) -Wall
++AM_CXXFLAGS = $(ORBCXXFLAGS) -Wall
+ 
+ bin_PROGRAMS = vncclient
+ 
+--- 3dwm-0.3.2/clients/pickclient/Makefile.am.orig	Wed Jul 25 15:19:30 2001
++++ 3dwm-0.3.2/clients/pickclient/Makefile.am	Tue Jul  8 15:39:13 2003
+@@ -34,7 +34,7 @@
+ 
+ INCLUDES = -I$(top_srcdir)/include -I$(top_srcdir)/include/support	\
+            -I$(top_builddir)/include/Nobel
+-CXXFLAGS = $(ORBCXXFLAGS)
++AM_CXXFLAGS = $(ORBCXXFLAGS)
+ 
+ bin_PROGRAMS = pickclient
+ 
+--- 3dwm-0.3.2/clients/csgclient/Makefile.am.orig	Wed Jul 25 15:19:29 2001
++++ 3dwm-0.3.2/clients/csgclient/Makefile.am	Tue Jul  8 15:38:53 2003
+@@ -34,7 +34,7 @@
+ 
+ INCLUDES = -I$(top_srcdir)/include -I$(top_srcdir)/include/support	\
+ -I$(top_builddir)/include/Nobel
+-CXXFLAGS = $(ORBCXXFLAGS)
++AM_CXXFLAGS = $(ORBCXXFLAGS)
+ 
+ bin_PROGRAMS = csgclient
+ 
+--- 3dwm-0.3.2/clients/clock/Makefile.am.orig	Fri Dec  7 14:09:33 2001
++++ 3dwm-0.3.2/clients/clock/Makefile.am	Tue Jul  8 15:38:43 2003
+@@ -34,7 +34,7 @@
+ 
+ INCLUDES = -I$(top_srcdir)/include -I$(top_srcdir)/include/support	\
+ -I$(top_builddir)/include/Nobel
+-CXXFLAGS = $(ORBCXXFLAGS)
++AM_CXXFLAGS = $(ORBCXXFLAGS)
+ 
+ bin_PROGRAMS = tdwm-clock
+ 
