@@ -1,5 +1,5 @@
 Summary:	3D user environment
-Summary(pl.UTF-8):   Trójwymiarowe środowisko użytkownika
+Summary(pl.UTF-8):	Trójwymiarowe środowisko użytkownika
 Name:		3dwm
 Version:	0.3.2
 Release:	1
@@ -56,7 +56,7 @@ kontrolek 3DUI etc.
 
 %package libs
 Summary:	3D user environment - Libraries
-Summary(pl.UTF-8):   Trójwymiarowe środowisko użytkownika - Bilioteki
+Summary(pl.UTF-8):	Trójwymiarowe środowisko użytkownika - Bilioteki
 Group:		X11/Libraries
 
 %description libs
@@ -84,7 +84,7 @@ kontrolek 3DUI etc.
 
 %package devel
 Summary:	3D user environment - development files
-Summary(pl.UTF-8):   Trójwymiarowe środowisko użytkownika - pliki nagłówkowe
+Summary(pl.UTF-8):	Trójwymiarowe środowisko użytkownika - pliki nagłówkowe
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -113,7 +113,7 @@ kontrolek 3DUI etc.
 
 %package static
 Summary:	3D user environment - static files
-Summary(pl.UTF-8):   Trójwymiarowe środowisko użytkownika - biblioteki statyczne
+Summary(pl.UTF-8):	Trójwymiarowe środowisko użytkownika - biblioteki statyczne
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}
 
