@@ -1,5 +1,5 @@
 Summary:	3D user environment
-Summary(pl):	TrÛjwymiarowe ∂rodowisko uøytkownika
+Summary(pl.UTF-8):   Tr√≥jwymiarowe ≈õrodowisko u≈ºytkownika
 Name:		3dwm
 Version:	0.3.2
 Release:	1
@@ -42,21 +42,21 @@ rendering, X11 (and other windowing system) bindings, CAVELib support,
 3D TrueType fonts, general streaming movie support, a 3DUI widget kit,
 etc.
 
-%description -l pl
-3Dwm jest trÛjwymiarowym ∂rodowiskiem uøytkownika, ktÛre moøna
-uruchomiÊ na sprzÍcie do Rzeczywisto∂ci Wirtualnej (jak CAVE lub HMD)
-oraz na komputerach biurkowych. Jest to platforma dla badaÒ i rozwoju
-trÛjwymiarowych interfejsÛw uøytkownika, dostarczaj±ca ∂rodkÛw
-odkrywania moøliwej przysz≥o∂ci interfejsÛw uøytkownika. 3Dwm jest w
-pe≥ni rozproszony z uøyciem technologii CORBA. Inne planowane i
-zaimplementowane cechy to rendering z uøyciem OpenGL, wi±zania dla X11
-(oraz innych systemÛw okienkowych), wsparcie dla CAVELib, czcionek
-True Type 3D, ogÛlne wsparcie dla strumieni filmowych, zestaw
+%description -l pl.UTF-8
+3Dwm jest tr√≥jwymiarowym ≈õrodowiskiem u≈ºytkownika, kt√≥re mo≈ºna
+uruchomiƒá na sprzƒôcie do Rzeczywisto≈õci Wirtualnej (jak CAVE lub HMD)
+oraz na komputerach biurkowych. Jest to platforma dla bada≈Ñ i rozwoju
+tr√≥jwymiarowych interfejs√≥w u≈ºytkownika, dostarczajƒÖca ≈õrodk√≥w
+odkrywania mo≈ºliwej przysz≈Ço≈õci interfejs√≥w u≈ºytkownika. 3Dwm jest w
+pe≈Çni rozproszony z u≈ºyciem technologii CORBA. Inne planowane i
+zaimplementowane cechy to rendering z u≈ºyciem OpenGL, wiƒÖzania dla X11
+(oraz innych system√≥w okienkowych), wsparcie dla CAVELib, czcionek
+True Type 3D, og√≥lne wsparcie dla strumieni filmowych, zestaw
 kontrolek 3DUI etc.
 
 %package libs
 Summary:	3D user environment - Libraries
-Summary(pl):	TrÛjwymiarowe ∂rodowisko uøytkownika - Bilioteki
+Summary(pl.UTF-8):   Tr√≥jwymiarowe ≈õrodowisko u≈ºytkownika - Bilioteki
 Group:		X11/Libraries
 
 %description libs
@@ -70,21 +70,21 @@ rendering, X11 (and other windowing system) bindings, CAVELib support,
 3D TrueType fonts, general streaming movie support, a 3DUI widget kit,
 etc.
 
-%description libs -l pl
-3Dwm jest trÛjwymiarowym ∂rodowiskiem uøytkownika, ktÛre moøna
-uruchomiÊ na sprzÍcie do Rzeczywisto∂ci Wirtualnej (jak CAVE lub HMD)
-oraz na komputerach biurkowych. Jest to platforma dla badaÒ i rozwoju
-trÛjwymiarowych interfejsÛw uøytkownika, dostarczaj±ca ∂rodkÛw
-odkrywania moøliwej przysz≥o∂ci interfejsÛw uøytkownika. 3Dwm jest w
-pe≥ni rozproszony z uøyciem technologii CORBA. Inne planowane i
-zaimplementowane cechy to rendering z uøyciem OpenGL, wi±zania dla X11
-(oraz innych systemÛw okienkowych), wsparcie dla CAVELib, czcionek
-True Type 3D, ogÛlne wsparcie dla strumieni filmowych, zestaw
+%description libs -l pl.UTF-8
+3Dwm jest tr√≥jwymiarowym ≈õrodowiskiem u≈ºytkownika, kt√≥re mo≈ºna
+uruchomiƒá na sprzƒôcie do Rzeczywisto≈õci Wirtualnej (jak CAVE lub HMD)
+oraz na komputerach biurkowych. Jest to platforma dla bada≈Ñ i rozwoju
+tr√≥jwymiarowych interfejs√≥w u≈ºytkownika, dostarczajƒÖca ≈õrodk√≥w
+odkrywania mo≈ºliwej przysz≈Ço≈õci interfejs√≥w u≈ºytkownika. 3Dwm jest w
+pe≈Çni rozproszony z u≈ºyciem technologii CORBA. Inne planowane i
+zaimplementowane cechy to rendering z u≈ºyciem OpenGL, wiƒÖzania dla X11
+(oraz innych system√≥w okienkowych), wsparcie dla CAVELib, czcionek
+True Type 3D, og√≥lne wsparcie dla strumieni filmowych, zestaw
 kontrolek 3DUI etc.
 
 %package devel
 Summary:	3D user environment - development files
-Summary(pl):	TrÛjwymiarowe ∂rodowisko uøytkownika - pliki nag≥Ûwkowe
+Summary(pl.UTF-8):   Tr√≥jwymiarowe ≈õrodowisko u≈ºytkownika - pliki nag≈Ç√≥wkowe
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -99,21 +99,21 @@ rendering, X11 (and other windowing system) bindings, CAVELib support,
 3D TrueType fonts, general streaming movie support, a 3DUI widget kit,
 etc.
 
-%description devel -l pl
-3Dwm jest trÛjwymiarowym ∂rodowiskiem uøytkownika, ktÛre moøna
-uruchomiÊ na sprzÍcie do Rzeczywisto∂ci Wirtualnej (jak CAVE lub HMD)
-oraz na komputerach biurkowych. Jest to platforma dla badaÒ i rozwoju
-trÛjwymiarowych interfejsÛw uøytkownika, dostarczaj±ca ∂rodkÛw
-odkrywania moøliwej przysz≥o∂ci interfejsÛw uøytkownika. 3Dwm jest w
-pe≥ni rozproszony z uøyciem technologii CORBA. Inne planowane i
-zaimplementowane cechy to rendering z uøyciem OpenGL, wi±zania dla X11
-(oraz innych systemÛw okienkowych), wsparcie dla CAVELib, czcionek
-True Type 3D, ogÛlne wsparcie dla strumieni filmowych, zestaw
+%description devel -l pl.UTF-8
+3Dwm jest tr√≥jwymiarowym ≈õrodowiskiem u≈ºytkownika, kt√≥re mo≈ºna
+uruchomiƒá na sprzƒôcie do Rzeczywisto≈õci Wirtualnej (jak CAVE lub HMD)
+oraz na komputerach biurkowych. Jest to platforma dla bada≈Ñ i rozwoju
+tr√≥jwymiarowych interfejs√≥w u≈ºytkownika, dostarczajƒÖca ≈õrodk√≥w
+odkrywania mo≈ºliwej przysz≈Ço≈õci interfejs√≥w u≈ºytkownika. 3Dwm jest w
+pe≈Çni rozproszony z u≈ºyciem technologii CORBA. Inne planowane i
+zaimplementowane cechy to rendering z u≈ºyciem OpenGL, wiƒÖzania dla X11
+(oraz innych system√≥w okienkowych), wsparcie dla CAVELib, czcionek
+True Type 3D, og√≥lne wsparcie dla strumieni filmowych, zestaw
 kontrolek 3DUI etc.
 
 %package static
 Summary:	3D user environment - static files
-Summary(pl):	TrÛjwymiarowe ∂rodowisko uøytkownika - biblioteki statyczne
+Summary(pl.UTF-8):   Tr√≥jwymiarowe ≈õrodowisko u≈ºytkownika - biblioteki statyczne
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}
 
@@ -128,16 +128,16 @@ rendering, X11 (and other windowing system) bindings, CAVELib support,
 3D TrueType fonts, general streaming movie support, a 3DUI widget kit,
 etc.
 
-%description static -l pl
-3Dwm jest trÛjwymiarowym ∂rodowiskiem uøytkownika, ktÛre moøna
-uruchomiÊ na sprzÍcie do Rzeczywisto∂ci Wirtualnej (jak CAVE lub HMD)
-oraz na komputerach biurkowych. Jest to platforma dla badaÒ i rozwoju
-trÛjwymiarowych interfejsÛw uøytkownika, dostarczaj±ca ∂rodkÛw
-odkrywania moøliwej przysz≥o∂ci interfejsÛw uøytkownika. 3Dwm jest w
-pe≥ni rozproszony z uøyciem technologii CORBA. Inne planowane i
-zaimplementowane cechy to rendering z uøyciem OpenGL, wi±zania dla X11
-(oraz innych systemÛw okienkowych), wsparcie dla CAVELib, czcionek
-True Type 3D, ogÛlne wsparcie dla strumieni filmowych, zestaw
+%description static -l pl.UTF-8
+3Dwm jest tr√≥jwymiarowym ≈õrodowiskiem u≈ºytkownika, kt√≥re mo≈ºna
+uruchomiƒá na sprzƒôcie do Rzeczywisto≈õci Wirtualnej (jak CAVE lub HMD)
+oraz na komputerach biurkowych. Jest to platforma dla bada≈Ñ i rozwoju
+tr√≥jwymiarowych interfejs√≥w u≈ºytkownika, dostarczajƒÖca ≈õrodk√≥w
+odkrywania mo≈ºliwej przysz≈Ço≈õci interfejs√≥w u≈ºytkownika. 3Dwm jest w
+pe≈Çni rozproszony z u≈ºyciem technologii CORBA. Inne planowane i
+zaimplementowane cechy to rendering z u≈ºyciem OpenGL, wiƒÖzania dla X11
+(oraz innych system√≥w okienkowych), wsparcie dla CAVELib, czcionek
+True Type 3D, og√≥lne wsparcie dla strumieni filmowych, zestaw
 kontrolek 3DUI etc.
 
 %prep
