@@ -51,7 +51,7 @@ odkrywania możliwej przyszłości interfejsów użytkownika. 3Dwm jest w
 pełni rozproszony z użyciem technologii CORBA. Inne planowane i
 zaimplementowane cechy to rendering z użyciem OpenGL, wiązania dla X11
 (oraz innych systemów okienkowych), wsparcie dla CAVELib, czcionek
-True Type 3D, ogólne wsparcie dla strumieni filmowych, zestaw
+TrueType 3D, ogólne wsparcie dla strumieni filmowych, zestaw
 kontrolek 3DUI etc.
 
 %package libs
@@ -79,7 +79,7 @@ odkrywania możliwej przyszłości interfejsów użytkownika. 3Dwm jest w
 pełni rozproszony z użyciem technologii CORBA. Inne planowane i
 zaimplementowane cechy to rendering z użyciem OpenGL, wiązania dla X11
 (oraz innych systemów okienkowych), wsparcie dla CAVELib, czcionek
-True Type 3D, ogólne wsparcie dla strumieni filmowych, zestaw
+TrueType 3D, ogólne wsparcie dla strumieni filmowych, zestaw
 kontrolek 3DUI etc.
 
 %package devel
@@ -108,7 +108,7 @@ odkrywania możliwej przyszłości interfejsów użytkownika. 3Dwm jest w
 pełni rozproszony z użyciem technologii CORBA. Inne planowane i
 zaimplementowane cechy to rendering z użyciem OpenGL, wiązania dla X11
 (oraz innych systemów okienkowych), wsparcie dla CAVELib, czcionek
-True Type 3D, ogólne wsparcie dla strumieni filmowych, zestaw
+TrueType 3D, ogólne wsparcie dla strumieni filmowych, zestaw
 kontrolek 3DUI etc.
 
 %package static
@@ -137,7 +137,7 @@ odkrywania możliwej przyszłości interfejsów użytkownika. 3Dwm jest w
 pełni rozproszony z użyciem technologii CORBA. Inne planowane i
 zaimplementowane cechy to rendering z użyciem OpenGL, wiązania dla X11
 (oraz innych systemów okienkowych), wsparcie dla CAVELib, czcionek
-True Type 3D, ogólne wsparcie dla strumieni filmowych, zestaw
+TrueType 3D, ogólne wsparcie dla strumieni filmowych, zestaw
 kontrolek 3DUI etc.
 
 %prep
